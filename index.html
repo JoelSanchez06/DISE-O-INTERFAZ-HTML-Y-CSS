@@ -70,7 +70,7 @@
         <div class="contenedor-tarjetas">
 
             <div class="tarjeta-hotel">
-                <a href="/detalles_pag/detalles_plazaG.html" class="text-decoration-none text-dark">
+                <a href="detalles_pag/detalles_plazaG.html" class="text-decoration-none text-dark">
                     <img src="imagenes/hotel_plazaG.avif" alt="Vista del Hotel 1" class="imagen-hotel">
                     <div class="contenido-tarjeta">
                         <h3>Hotel Plaza Grande</h3>
@@ -85,7 +85,7 @@
             </div>
 
             <div class="tarjeta-hotel">
-                <a href="/detalles_pag/detalles_gangotena.html" class="text-decoration-none text-dark">
+                <a href="detalles_pag/detalles_gangotena.html" class="text-decoration-none text-dark">
                     <img src="imagenes/hotel_gangotena.webp" alt="Vista del Hotel 2" class="imagen-hotel">
                     <div class="contenido-tarjeta">
                         <h3>Hotel Casa Gangotena</h3>
@@ -100,7 +100,7 @@
             </div>
 
             <div class="tarjeta-hotel">
-                <a href="/detalles_pag/detalles_pag_patioA.html" class="text-decoration-none text-dark">
+                <a href="detalles_pag/detalles_pag_patioA.html" class="text-decoration-none text-dark">
                     <img src="imagenes/hotel_patioA.webp" alt="Vista del Hotel 3" class="imagen-hotel">
                     <div class="contenido-tarjeta">
                         <h3>Hotel Patio Andaluz</h3>
@@ -115,112 +115,7 @@
             </div>
 
         </div>
-    </section>
-    <section class="Hoteles" id="hoteles">
-        <h1>Hoteles</h1>
-
-        <div class="hoteles_layout">
-
-            <section class="filtrar_resultados">
-                <h3>Filtrar Resultados</h3>
-                <!--PAra hacer la barra que se desliza y poner precio --> 
-                <div class="seccion">
-                    <p class="seccion-titulo">Rango de Precios</p>
-                    <input type="range" min="150" max="250" id="barra" value="150"
-                        oninput="document.getElementById('numero').textContent = this.value">
-                    <p class="rango-label">$<span id="numero">150</span> USD – 250 USD</p>
-                </div>
-
-                <hr class="separador">
-                <!-- Aqui hace las casillas de eleccion para escoger la calificacion
-                 escoge solo una opcion por el input radio-->
-                <div class="seccion">
-                    <p class="seccion-titulo">Estrellas</p>
-                    <label class="radio-item"><input type="radio" name="estrellas"> ⭐⭐⭐⭐⭐</label>
-                    <label class="radio-item"><input type="radio" name="estrellas" checked> ⭐⭐⭐⭐</label>
-                    <label class="radio-item"><input type="radio" name="estrellas"> ⭐⭐⭐</label>
-                    <label class="radio-item"><input type="radio" name="estrellas"> ⭐⭐</label>
-                    <label class="radio-item"><input type="radio" name="estrellas"> ⭐</label>
-                </div>
-
-                <hr class="separador">
-                <!--aqui igual una unica opicion puede escoger
-                para escoger el sector-->
-                <div class="seccion">
-                    <p class="seccion-titulo">Ubicación</p>
-                    <label class="radio-item"><input type="radio" name="ubicacion" checked> Quito Centro</label>
-                    <label class="radio-item"><input type="radio" name="ubicacion"> Quito Norte</label>
-                    <label class="radio-item"><input type="radio" name="ubicacion"> Guayaquil</label>
-                    <label class="radio-item"><input type="radio" name="ubicacion"> Cuenca</label>
-                    <label class="radio-item"><input type="radio" name="ubicacion"> Loja</label>
-                </div>
-
-                <hr class="separador">
-                <!-- igual escoger una opcion unica
-                 para escoger tipo de alojamiento-->
-                <div class="seccion">
-                    <p class="seccion-titulo">Tipo de Alojamiento</p>
-                    <label class="radio-item"><input type="radio" name="alojamiento" checked> Hotel</label>
-                    <label class="radio-item"><input type="radio" name="alojamiento"> Resort</label>
-                    <label class="radio-item"><input type="radio" name="alojamiento"> Hostal</label>
-                </div>
-
-                <hr class="separador">
-
-                <button class="btn-filtrar">Aplicar Filtros</button>
-            </section>
-
-            <!-- TARJETAS -->
-            <div class="lista_hoteles">
-                <!--Aqui es donde estan las ´partes de los hoteles
-                donde muestra foto info y calificacion-->
-                <div class="hotel-card">
-                    <img src="imagenes/hotel_sanF.webp" alt="Hotel">
-                    <div class="hotel-info">
-                        <p class="hotel-nombre">Hotel Plaza Grande</p>
-                        <p class="hotel-estrellas">⭐⭐⭐⭐⭐ <span>800 opiniones</span></p>
-                        <p class="hotel-ubicacion">📍 Quito Centro</p>
-                        <p class="hotel-descripcion">Lujoso hotel en el corazón del centro histórico, con restaurante
-                            gourmet.</p>
-                    </div>
-                </div>
-                <!--info hoteles foto, descripcion-->
-                <div class="hotel-card">
-                    <img src="imagenes/hotel_plazaG.avif" alt="Hotel">
-                    <div class="hotel-info">
-                        <p class="hotel-nombre">Hotel Casa Gangotena</p>
-                        <p class="hotel-estrellas">⭐⭐⭐⭐⭐ <span>720 opiniones</span></p>
-                        <p class="hotel-ubicacion">📍 Quito Centro</p>
-                        <p class="hotel-descripcion">Elegante hotel boutique en una mansión histórica con terraza y
-                            vistas a la ciudad.</p>
-                    </div>
-                </div>
-                <!--igual info del hotel-->
-                <div class="hotel-card">
-                    <img src="imagenes/hotel_casonaR.avif" alt="Hotel">
-                    <div class="hotel-info">
-                        <p class="hotel-nombre">Hotel Boutique Carondelet</p>
-                        <p class="hotel-estrellas">⭐⭐⭐⭐ <span>650 opiniones</span></p>
-                        <p class="hotel-ubicacion">📍 Quito Centro</p>
-                        <p class="hotel-descripcion">Encantador hotel boutique con terraza y piscina en el corazón del
-                            centro de Quito.</p>
-                    </div>
-                </div>
-                <!--esta parte sirve para ir navegando por paginas
-                1,2,3,4 y », son partes de la navegacion-->
-                <div class="paginacion">
-                    <button>«</button>
-                    <button>1</button>
-                    <button class="active">2</button>
-                    <button>3</button>
-                    <button>4</button>
-                    <button>»</button>
-                </div>
-
-            </div>
-
-        </div>
-    </section>
+    </section>5
     <section class="beneficios">
         <h2>¿Porque reservar con Nosotros?</h2>
         <div class="contenedor-beneficios">
