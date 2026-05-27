@@ -477,4 +477,212 @@ nav ul li a:hover {
         justify-content: center;
     }
 }
+/*Aqui se asigna el max de ancho, margen y espacio que ocupa todo*/
+.Hoteles {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+/*aqui asigna a h1 
+fuente, margen, color fuente*/
+.Hoteles > h1 {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 24px;
+    color: #1a1a2e;
+  }
+
+  /* ── LAYOUT: filtros + tarjetas ── */
+.hoteles_layout {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+  }
+
+  /* ── PANEL FILTROS ── */
+  .filtrar_resultados {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    width: 220px;
+    min-width: 220px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+  }
+
+  .filtrar_resultados h3 {
+    font-size: 15px;
+    font-weight: 700;
+    color: #1a1a2e;
+    margin-bottom: 16px;
+  }
+
+  .filtrar_resultados .seccion {
+    margin-bottom: 18px;
+  }
+
+  .filtrar_resultados .seccion-titulo {
+    font-size: 13px;
+    font-weight: 700;
+    color: #555;
+    margin-bottom: 10px;
+  }
+
+  .separador {
+    border: none;
+    border-top: 1px solid #e8e8e8;
+    margin: 14px 0;
+  }
+
+  /* rango de precios */
+  .rango-label {
+    font-size: 12px;
+    color: #888;
+    margin-top: 6px;
+  }
+
+  input[type="range"] {
+    width: 100%;
+    accent-color: #2e86de;
+    cursor: pointer;
+    margin: 6px 0 2px;
+  }
+
+  /* radio buttons personalizados */
+  .radio-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+    font-size: 13px;
+    color: #444;
+    cursor: pointer;
+  }
+/*estilos del dentro de cada opcion (radio buttoms)*/
+  .radio-item input[type="radio"] {
+    accent-color: #2e86de;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+  }
+
+  /* botón aplicar */
+  .btn-filtrar {
+    width: 100%;
+    background: #2e86de;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 9px 0;
+    font-size: 13px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 4px;
+    transition: background 0.2s;
+  }
+
+  .btn-filtrar:hover { background: #1a6fc4; }
+
+  /* ── LISTA DE HOTELES ── */
+  .lista_hoteles {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .hotel-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+    display: flex;
+    overflow: hidden;
+    transition: transform 0.15s, box-shadow 0.15s;
+  }
+
+  .hotel-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.11);
+  }
+
+  .hotel-card img {
+    width: 160px;
+    min-width: 160px;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  .hotel-info {
+    padding: 16px 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .hotel-nombre {
+    font-size: 16px;
+    font-weight: 700;
+    color: #1a1a2e;
+  }
+
+  .hotel-estrellas {
+    font-size: 13px;
+    color: #f0a500;
+  }
+
+  .hotel-estrellas span {
+    color: #888;
+    font-size: 12px;
+    margin-left: 4px;
+  }
+
+  .hotel-ubicacion {
+    font-size: 12px;
+    color: #2e86de;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .hotel-descripcion {
+    font-size: 13px;
+    color: #666;
+    line-height: 1.5;
+    margin-top: 2px;
+  }
+
+  /* placeholder imagen */
+  .hotel-card img{
+    width: 160px;
+    min-width: 160px;
+    height: 130px;
+    object-fit: cover;
+  }
+
+  /* paginación */
+  .paginacion {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin-top: 8px;
+  }
+
+  .paginacion button {
+    width: 32px;
+    height: 32px;
+    border-radius: 6px;
+    border: 1px solid #ddd;
+    background: #fff;
+    font-size: 13px;
+    cursor: pointer;
+    color: #444;
+    transition: all 0.15s;
+  }
+
+  .paginacion button.active,
+  .paginacion button:hover {
+    background: #2e86de;
+    color: #fff;
+    border-color: #2e86de;
+  }
 
